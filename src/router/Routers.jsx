@@ -5,12 +5,14 @@ import About from '../pages/About/About'
 import Portfolio from "../pages/Portfolio/Portfolio"
 import Services from "../pages/services/Services"
 import Contact from "../pages/Contact us/Contact"
+import Navbar from '../components/Navbar/Navbar'
 
 
 function routers() {
   return (
     <div>
       <BrowserRouter>
+      <Navbar/>
       <Routes>
         <Route path='/' element={<Navigate to="/home"/>}/>
         <Route path='/home' element={<Home/>}/>
